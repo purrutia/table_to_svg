@@ -82,4 +82,5 @@ def render_mpl_table(data, col_width=3.0, row_height=0.625, font_size=14,
     return ax.get_figure(), ax
 
 fig, ax = render_mpl_table(df, header_columns=0, col_width=3.0)
-fig.savefig(output_file, bbox_inches = 'tight')
+fig.tight_layout()
+fig.savefig(output_file)
