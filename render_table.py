@@ -42,3 +42,6 @@ if __name__ == '__main__':
     fig, ax = render_the_table(data, header_columns=0, col_width=3.0)
     fig.tight_layout()
     fig.savefig(output_file)
+    print(f'data is type: {type(data)}')
+    print(f'fig is type: {type(fig)}')
+    print(f'ax is type: {type(ax)}')
